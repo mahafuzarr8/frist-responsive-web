@@ -1,0 +1,302 @@
+
+*{
+    margin: 0  ;
+    padding: 0;
+    font-family: Work Sans;
+}
+
+/* share style  */
+.discription-text{
+    font-size: 1rem;
+    color:#535252 ;
+    line-height: 1.4rem;
+}
+header{
+    background-color: #fff4e7;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-bar h3{
+    font-size: 2.5rem;
+}
+.nav-bar ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.nav-bar ul a{
+    text-decoration: none;
+    color:#5a5857;
+    font-size: 1rem;
+}
+.mobile-tab-nav{
+    display:none ;
+    font-size: 1.3rem;
+    color: black;
+}
+.banner{
+   text-align: center;
+   padding-top: 100px;
+   
+   
+}
+.banner-content{
+    max-width: 800px;
+    margin: 0 auto;
+    
+    
+}
+.banner-heading{
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
+.Primary_button{
+    padding: 20px;
+    background-color: #ff900e;
+    font-size: 1rem;
+    color: #ffff;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+.banner-img img{
+    width: 85%;
+    padding-bottom: 20px;
+}
+/* main part start  */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.quick-contaioner{
+    display: flex;
+    justify-content:space-around ;
+    padding: 50px 0px;
+    gap: 100px;
+    align-items: center;
+}
+.quick-img-cont{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.quick-con-text{
+    font-size: 2.5rem;
+}
+.quick-list-text{
+    font-weight: 400;
+    color: #7c7775;
+}
+.feature-text{
+    color: #ff900e;
+}
+.quick-content p{
+    padding: 20px 0px;
+}
+
+/* fearture area  */
+
+.features-are{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+    margin-top: 100px;
+    align-items: center;
+}
+.feature-heading{
+    font-size: 2.5rem;
+    border-left: 5px solid #ff900e;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.fearutre-sectaion{
+   padding-top: 20px;
+}
+
+.sectation-content{
+    margin: 20px;
+    padding: 30px;
+   
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+}
+.sectaion-heading{
+    font-size: 1.2rem;
+}
+.experience{
+    background-color: #ff900e;
+    height: 50px;
+    width: 150px;
+    padding: 20px;
+    border-radius: 10px;
+
+   
+    position: relative;
+    top: -45px;
+    left: -40px;
+    
+    
+}
+/* facts are code  */
+.facts-are{
+    padding: 70px 0px;
+}
+.exp-heading{
+    color: #ffff;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.exp-para{
+    color: #ffff;
+    font: 0.5rem;
+    text-align: center;
+}
+
+.facts-heading{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+.facts-expre{
+    display: flex;
+    justify-content: space-evenly;
+}
+.expre{
+    border: 1px solid #ff900e;
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.expre img{
+    width: 50px;
+    padding: 10px 0px;
+}
+.expre-count{
+    font-size: 2rem;
+    color: #535252;
+}
+.expre-para{
+    font: 2rem;
+    font-weight: 600px;
+    color: #7c7775;
+}
+/* Mobile midea quary 576px size*/
+@media screen and (max-width:576px) {
+    .nav-bar >ul{
+        display: none;
+    }
+    .nav-bar h3{
+        font-size: 2rem;
+        
+    }
+    .mobile-tab-nav{
+        display: block;
+    }
+    .discription-text{
+        font-size: 0.8rem;
+    }
+    .banner{
+        padding-top: 40px;
+    }
+    .banner-heading{
+        font-size: 2rem;
+        padding: 10px px;
+    }
+    .Primary_button{
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .quick-contaioner{
+
+        flex-direction: column-reverse;
+        max-width: 85%;
+         margin: 0 auto;
+        padding-top: 20px;
+        gap: 20px;
+    }
+    .quick-img-cont{
+        grid-template-columns: 1fr;
+    }
+    .quick-img-cont img{
+        width: 100%;
+     }
+     .quick-con-text{
+        font-size: 2rem;
+}
+    .features-are{
+        flex-direction: column;
+        max-width: 85%;
+        margin: 0 auto;
+        gap: 15px;
+    }
+    .feature-are-img img{
+    
+    width:100%;
+    }
+    .feature-heading{
+        font-size: 2rem;
+    }
+    .sectation-content{
+        margin: 8px;
+        padding: 15px;
+    }
+    .sectaion-heading{
+        font-size: 0.9rem;
+    }
+    .experience{
+        left: -9px;
+    }
+    .facts-are{
+        padding: 0px 20px;
+    }
+    .facts-expre{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .expre{
+        margin: 10px auto;
+    }
+}
+/* tablet midea quary size  */
+@media screen and (min-width:576px) and (max-width:960px) {
+    .quick-contaioner{
+        flex-direction: column-reverse;
+        max-width: 85%;
+         margin: 0 auto;
+         gap: 20px;
+    }
+    
+    .quick-img-cont img{
+       width: 100%;
+    }
+    .quick-con-text{
+        font-size: 2rem;
+    }
+    .features-are{
+        flex-direction: column;
+        max-width: 85%;
+        margin: 0 auto;
+        gap: 15px;
+    }
+    .feature-are-img img{
+    
+        width:100%;
+        }
+        .facts-are{
+            padding: 0px 20px;
+            margin: 0 auto;
+        }
+        .facts-expre{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+}
